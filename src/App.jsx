@@ -5,7 +5,12 @@ import {usePersons} from "./persons/custom-hooks.js";
 import {PhoneForm} from "./persons/components/PhoneForm.jsx";
 import LoginForm from "./login/components/LoginForm.jsx";
 import {useUser} from "./login/custom-hooks.js";
-
+///https://fullstackopen.com/es/part8/servidor_graph_ql
+///https://fullstackopen.com/es/part8/servidor_graph_ql
+///https://fullstackopen.com/es/part8/servidor_graph_ql
+///https://fullstackopen.com/es/part8/servidor_graph_ql
+///https://fullstackopen.com/es/part8/servidor_graph_ql
+///https://fullstackopen.com/es/part8/servidor_graph_ql
 function App() {
 
   const {data, error, loading} = usePersons();

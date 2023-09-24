@@ -1,5 +1,5 @@
 import {useLazyQuery, useMutation, useQuery} from "@apollo/client";
-import {ALL_PERSONS, FIND_PERSONS} from "./graphql-queries.js";
+import {ALL_PERSONS, FIND_PERSON_BY_NAME} from "./graphql-queries.js";
 import {CREATE_PERSON, EDIT_NUMBER} from "./graphql-mutations.js";
 
 export const usePersons = () => {
@@ -37,7 +37,7 @@ export const useAddPerson = () => {
 };
 
 export const useSearchPerson = () => {
-  const [getPerson, result] = useLazyQuery(FIND_PERSONS);
+  const [getPerson, result] = useLazyQuery(FIND_PERSON_BY_NAME);
 
   const {data, loading, error} = result;
   return {getPerson, data, loading, error};
